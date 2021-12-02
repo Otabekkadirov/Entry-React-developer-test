@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Junior Frontend Test Design</title>
+	<link rel="stylesheet" href="index.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div>
+		<!-- Header, Navbar, Currency switcher, Cart -->
+		<header class="header container">
+
+			<!-- Navigation -->
+			<section class="navbar underline-indicators flex" style="--gap: 0;">
+				<button aria-selected="true" class="uppercase text-black bg-white ff-serif fs-400">Women</button>
+				<button aria-selected="false" class="uppercase text-black bg-white ff-serif fs-400">Men</button>
+				<button aria-selected="false" class="uppercase text-black bg-white ff-serif fs-400">Kids</button>
+				<button aria-selected="false" class="uppercase text-black bg-white ff-serif fs-400"
+					style="display: none;">Kids</button>
+				<button aria-selected="false" class="uppercase text-black bg-white ff-serif fs-400"
+					style="display: none;">Kids</button>
+				<button aria-selected="false" class="uppercase text-black bg-white ff-serif fs-400"
+					style="display: none;">Kids</button>
+				<button aria-selected="false" class="uppercase text-black bg-white ff-serif fs-400"
+					style="display: none;">Kids</button>
+			</section>
+
+			<!-- Logo -->
+			<section class="logo">
+				<img src="logo/logo_transparent.svg" alt="Brand logo">
+			</section>
+
+			<!-- Action -->
+			<section class="action flex" style="--gap: 22px;">
+				<div class="spacer-xl" style="visibility: hidden;"></div>
+				<div class="spacer-xl" style="visibility: hidden;"></div>
+				<div class="spacer-xl"><img src="logo/currency.svg" alt="Currency"></div>
+				<div class="spacer-xl"><img src="logo/empty_cart.svg" alt="Empty Cart"></div>
+			</section>
+		</header>
+	</div>
+</body>
+
+</html>
