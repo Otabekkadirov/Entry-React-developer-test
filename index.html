@@ -17,10 +17,10 @@
 <body>
 	<div>
 		<!-- Header, Navbar, Currency switcher, Cart -->
-		<header class="header container">
+		<header class="border header container">
 
 			<!-- Navigation -->
-			<section class="navbar underline-indicators flex" style="--gap: 0;">
+			<section class="border navbar flex" style="--gap: 0;">
 				<button aria-selected="true" class="uppercase text-black bg-white ff-sans fs-400">Women</button>
 				<button aria-selected="false" class="uppercase text-black bg-white ff-sans fs-400">Men</button>
 				<button aria-selected="false" class="uppercase text-black bg-white ff-sans fs-400">Kids</button>
@@ -35,207 +35,273 @@
 			</section>
 
 			<!-- Logo -->
-			<section class="logo">
+			<section class="border logo">
 				<img src="logo/logo_transparent.svg" alt="Brand logo">
 			</section>
 
 			<!-- Action -->
-			<section class="action flex" style="--gap: 22px;">
+			<div class="border action flex" style="--gap: 22px;">
 				<div class="spacer-xl" style="visibility: hidden;"></div>
 				<div class="spacer-xl" style="visibility: hidden;"></div>
 				<div class="spacer-xl"><img src="logo/currency.svg" alt="Currency"></div>
 				<div class="spacer-xl"><img src="logo/empty_cart.svg" alt="Empty Cart"></div>
-			</section>
+			</div>
 		</header>
 
-		<div class="title container">
-			<h1>Category name</h1>
-		</div>
+
 
 		<!-- Product Card Desktop, Product name, Product price -->
-		<main class="main container">
+		<main class="container" style="border: 1px solid blue;">
 
-			<!-- Cards -->
-			<div class="product-card bg-white text-black ff-sans">
-				<div class="card-image">
-					<img src="img/ProductD.jpg" alt="Product">
+			<div class="cart-overlay">
 
-					<button class="heart-button">
-						<img src="logo/heart.svg" alt="Heart">
-					</button>
-
-					<button class="cart-button bg-primary">
-						<img src="logo/empty_cart_white.svg" alt="Empty cart">
-					</button>
-
-					<div class="badge-icon bg-primary">
-						<span style="display: none;">
-							<img src="logo/badge-icon.svg" alt="badge icon">
-						</span>
-						<span class="text-white fs-200">
-							-50%
-						</span>
+				<div class="cart-content bg-white flex">
+					<div class="cart-bag flex">
+						<div class="cart-bag-info flex"><span class="fw-bolder">My bag, </span> 2 items</div>
+						<button class="close-button"><span class="fs-600">&times;</span></button>
 					</div>
-				</div>
 
-				<div class="spacer-base"></div>
+					<div class="cart-item flex">
+						<div class="cart-item-product flex">
+							<span class="product-title text-black fs-400">Apollo Running Short</span>
+							<span class="product-price text-black fs-300 fw-bolder">$50.00</span>
+							<div class="product-size flex">
+								<button>S</button>
+								<button>M</button>
+							</div>
+						</div>
 
-				<div class="card-content">
-					<span class="product-title ff-sans text-black fs-400">Apollo Running Short</span>
-					<span class="product-price ff-sans text-black fs-400">$50.00</span>
+						<div class="cart-item-counter flex">
+							<button>+</button>
+							<span>1</span>
+							<button>-</button>
+						</div>
+
+						<div class="cart-item-image">
+							<img src="img/ProductD.jpg" alt="Product">
+						</div>
+					</div>
+
+					<div class="cart-item flex">
+						<div class="cart-item-product flex">
+							<span class="product-title text-black fs-400">Apollo Running Short</span>
+							<span class="product-price text-black fs-300 fw-bolder">$50.00</span>
+							<div class="product-size flex">
+								<button>S</button>
+								<button>M</button>
+							</div>
+						</div>
+
+						<div class="cart-item-counter flex">
+							<button>+</button>
+							<span>1</span>
+							<button>-</button>
+						</div>
+
+						<div class="cart-item-image">
+							<img src="img/ProductD.jpg" alt="Product">
+						</div>
+					</div>
+
+					<div class="total-price flex">
+						<span class="fs-300 fw-bolder">Total</span>
+						<span class="fs-300 fw-bolder">$100.00</span>
+					</div>
+
+					<div class="cart-buttons flex">
+						<button class="uppercase fs-300 fw-bolder bg-white text-black">View bag</button>
+						<button class="uppercase fs-300 fw-bolder bg-primary text-white">Check out</button>
+					</div>
 				</div>
 			</div>
 
-			<div class="product-card bg-white text-black ff-sans">
-				<div class="card-image">
-					<img src="img/ProductC.jpg" alt="Product">
+			<div class="border title">
+				<h1>Category name</h1>
+			</div>
 
-					<button class="heart-button">
-						<img src="logo/heart.svg" alt="Heart">
-					</button>
+			<div class="border card-container">
 
-					<button class="cart-button bg-primary">
-						<img src="logo/empty_cart_white.svg" alt="Empty cart">
-					</button>
+				<!-- Cards -->
+				<div class="border product-card bg-white text-black ff-sans">
+					<div class="card-image">
+						<img src="img/ProductD.jpg" alt="Product">
 
-					<div class="badge-icon bg-primary">
-						<span style="display: none;">
-							<img src="logo/badge-icon.svg" alt="badge icon">
-						</span>
-						<span class="text-white fs-200">
-							-50%
-						</span>
+						<button class="heart-button">
+							<img src="logo/heart.svg" alt="Heart">
+						</button>
+
+						<button class="cart-button bg-primary">
+							<img src="logo/empty_cart_white.svg" alt="Empty cart">
+						</button>
+
+						<div class="badge-icon bg-primary">
+							<span style="display: none;">
+								<img src="logo/badge-icon.svg" alt="badge icon">
+							</span>
+							<span class="text-white fs-200">
+								-50%
+							</span>
+						</div>
+					</div>
+
+					<div class="spacer-base"></div>
+
+					<div class="border card-content">
+						<span class="product-title ff-sans text-black fs-400">Apollo Running Short</span>
+						<span class="product-price ff-sans text-black fs-400">$50.00</span>
 					</div>
 				</div>
 
-				<div class="spacer-base"></div>
+				<div class="border product-card bg-white text-black ff-sans">
+					<div class="card-image">
+						<img src="img/ProductC.jpg" alt="Product">
 
-				<div class="card-content">
-					<span class="product-title ff-sans text-black fs-400">Apollo Running Short</span>
-					<span class="product-price ff-sans text-black fs-400">$50.00</span>
-				</div>
-			</div>
+						<button class="heart-button">
+							<img src="logo/heart.svg" alt="Heart">
+						</button>
 
-			<div class="product-card bg-white text-black ff-sans">
-				<div class="card-image">
-					<img src="img/ProductB.jpg" alt="Product">
+						<button class="cart-button bg-primary">
+							<img src="logo/empty_cart_white.svg" alt="Empty cart">
+						</button>
 
-					<button class="heart-button">
-						<img src="logo/heart.svg" alt="Heart">
-					</button>
+						<div class="badge-icon bg-primary">
+							<span style="display: none;">
+								<img src="logo/badge-icon.svg" alt="badge icon">
+							</span>
+							<span class="text-white fs-200">
+								-50%
+							</span>
+						</div>
+					</div>
 
-					<button class="cart-button bg-primary">
-						<img src="logo/empty_cart_white.svg" alt="Empty cart">
-					</button>
+					<div class="spacer-base"></div>
 
-					<div class="badge-icon bg-primary">
-						<span style="display: none;">
-							<img src="logo/badge-icon.svg" alt="badge icon">
-						</span>
-						<span class="text-white fs-200">
-							-50%
-						</span>
+					<div class="card-content">
+						<span class="product-title ff-sans text-black fs-400">Apollo Running Short</span>
+						<span class="product-price ff-sans text-black fs-400">$50.00</span>
 					</div>
 				</div>
 
-				<div class="spacer-base"></div>
+				<div class="border product-card bg-white text-black ff-sans">
+					<div class="card-image">
+						<img src="img/ProductB.jpg" alt="Product">
 
-				<div class="card-content">
-					<span class="product-title ff-sans text-black fs-400">Apollo Running Short</span>
-					<span class="product-price ff-sans text-black fs-400">$50.00</span>
-				</div>
-			</div>
+						<button class="heart-button">
+							<img src="logo/heart.svg" alt="Heart">
+						</button>
 
-			<div class="product-card bg-white text-black ff-sans">
-				<div class="card-image">
-					<img src="img/ProductA.jpg" alt="Product">
+						<button class="cart-button bg-primary">
+							<img src="logo/empty_cart_white.svg" alt="Empty cart">
+						</button>
 
-					<button class="heart-button">
-						<img src="logo/heart.svg" alt="Heart">
-					</button>
+						<div class="badge-icon bg-primary">
+							<span style="display: none;">
+								<img src="logo/badge-icon.svg" alt="badge icon">
+							</span>
+							<span class="text-white fs-200">
+								-50%
+							</span>
+						</div>
+					</div>
 
-					<button class="cart-button bg-primary">
-						<img src="logo/empty_cart_white.svg" alt="Empty cart">
-					</button>
+					<div class="spacer-base"></div>
 
-					<div class="badge-icon bg-primary">
-						<span style="display: none;">
-							<img src="logo/badge-icon.svg" alt="badge icon">
-						</span>
-						<span class="text-white fs-200">
-							-50%
-						</span>
+					<div class="card-content">
+						<span class="product-title ff-sans text-black fs-400">Apollo Running Short</span>
+						<span class="product-price ff-sans text-black fs-400">$50.00</span>
 					</div>
 				</div>
 
-				<div class="spacer-base"></div>
+				<div class="border product-card bg-white text-black ff-sans">
+					<div class="card-image">
+						<img src="img/ProductA.jpg" alt="Product">
 
-				<div class="card-content">
-					<span class="product-title ff-sans text-black fs-400">Apollo Running Short</span>
-					<span class="product-price ff-sans text-black fs-400">$50.00</span>
-				</div>
-			</div>
+						<button class="heart-button">
+							<img src="logo/heart.svg" alt="Heart">
+						</button>
 
-			<div class="product-card bg-white text-black ff-sans">
-				<div class="card-image">
-					<img src="img/ProductB.jpg" alt="Product">
+						<button class="cart-button bg-primary">
+							<img src="logo/empty_cart_white.svg" alt="Empty cart">
+						</button>
 
-					<button class="heart-button">
-						<img src="logo/heart.svg" alt="Heart">
-					</button>
+						<div class="badge-icon bg-primary">
+							<span style="display: none;">
+								<img src="logo/badge-icon.svg" alt="badge icon">
+							</span>
+							<span class="text-white fs-200">
+								-50%
+							</span>
+						</div>
+					</div>
 
-					<button class="cart-button bg-primary">
-						<img src="logo/empty_cart_white.svg" alt="Empty cart">
-					</button>
+					<div class="spacer-base"></div>
 
-					<div class="badge-icon bg-primary">
-						<span style="display: none;">
-							<img src="logo/badge-icon.svg" alt="badge icon">
-						</span>
-						<span class="text-white fs-200">
-							-50%
-						</span>
+					<div class="card-content">
+						<span class="product-title ff-sans text-black fs-400">Apollo Running Short</span>
+						<span class="product-price ff-sans text-black fs-400">$50.00</span>
 					</div>
 				</div>
 
-				<div class="spacer-base"></div>
+				<div class="border product-card bg-white text-black ff-sans">
+					<div class="card-image">
+						<img src="img/ProductB.jpg" alt="Product">
 
-				<div class="card-content">
-					<span class="product-title ff-sans text-black fs-400">Apollo Running Short</span>
-					<span class="product-price ff-sans text-black fs-400">$50.00</span>
-				</div>
-			</div>
+						<button class="heart-button">
+							<img src="logo/heart.svg" alt="Heart">
+						</button>
 
-			<div class="product-card bg-white text-black ff-sans">
-				<div class="card-image">
-					<img src="img/ProductD.jpg" alt="Product">
+						<button class="cart-button bg-primary">
+							<img src="logo/empty_cart_white.svg" alt="Empty cart">
+						</button>
 
-					<button class="heart-button">
-						<img src="logo/heart.svg" alt="Heart">
-					</button>
+						<div class="badge-icon bg-primary">
+							<span style="display: none;">
+								<img src="logo/badge-icon.svg" alt="badge icon">
+							</span>
+							<span class="text-white fs-200">
+								-50%
+							</span>
+						</div>
+					</div>
 
-					<button class="cart-button bg-primary">
-						<img src="logo/empty_cart_white.svg" alt="Empty cart">
-					</button>
+					<div class="spacer-base"></div>
 
-					<div class="badge-icon bg-primary">
-						<span style="display: none;">
-							<img src="logo/badge-icon.svg" alt="badge icon">
-						</span>
-						<span class="text-white fs-200">
-							-50%
-						</span>
+					<div class="card-content">
+						<span class="product-title ff-sans text-black fs-400">Apollo Running Short</span>
+						<span class="product-price ff-sans text-black fs-400">$50.00</span>
 					</div>
 				</div>
 
-				<div class="spacer-base"></div>
+				<div class="border product-card bg-white text-black ff-sans">
+					<div class="card-image">
+						<img src="img/ProductD.jpg" alt="Product">
 
-				<div class="card-content">
-					<span class="product-title ff-sans text-black fs-400">Apollo Running Short</span>
-					<span class="product-price ff-sans text-black fs-400">$50.00</span>
+						<button class="heart-button">
+							<img src="logo/heart.svg" alt="Heart">
+						</button>
+
+						<button class="cart-button bg-primary">
+							<img src="logo/empty_cart_white.svg" alt="Empty cart">
+						</button>
+
+						<div class="badge-icon bg-primary">
+							<span style="display: none;">
+								<img src="logo/badge-icon.svg" alt="badge icon">
+							</span>
+							<span class="text-white fs-200">
+								-50%
+							</span>
+						</div>
+					</div>
+
+					<div class="spacer-base"></div>
+
+					<div class="card-content">
+						<span class="product-title ff-sans text-black fs-400">Apollo Running Short</span>
+						<span class="product-price ff-sans text-black fs-400">$50.00</span>
+					</div>
 				</div>
 			</div>
-
 
 		</main>
 	</div>
