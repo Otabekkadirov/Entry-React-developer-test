@@ -106,6 +106,16 @@ select {
   }
 }
 
+/* This rule set is to visualize the position of block elements */
+
+header,
+main,
+section,
+div,
+p {
+  /* border: 1px solid red; */
+}
+
 /* ---------------- */
 /* Utility classes  */
 /* ---------------- */
@@ -216,10 +226,6 @@ select {
   font-weight: 600;
 }
 
-.border {
-  border: 1px solid red;
-}
-
 /* ------------------- */
 /* Components          */
 /* ------------------- */
@@ -297,7 +303,7 @@ main {
 
 /* Cart overlay */
 .cart-overlay {
-  display: block;
+  display: none;
   position: absolute; /* Stay in place */
   z-index: 2; /* Sit on top */
   width: 100%;
@@ -461,7 +467,7 @@ main {
 
 /* Title */
 .title {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   justify-content: flex-start;
   margin-top: 4.5em;

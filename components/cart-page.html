@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cart page</title>
+	<link rel="stylesheet" href="../index.css">
+	<link rel="stylesheet" href="cart-page.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+
+	<!-- Header, Navbar, Currency switcher, Cart -->
+	<header class="header container">
+
+		<!-- Navigation -->
+		<section class="navbar flex" style="--gap: 0;">
+			<button aria-selected="true" class="uppercase text-black bg-white ff-sans fs-400">Women</button>
+			<button aria-selected="false" class="uppercase text-black bg-white ff-sans fs-400">Men</button>
+			<button aria-selected="false" class="uppercase text-black bg-white ff-sans fs-400">Kids</button>
+			<button aria-selected="false" class="uppercase text-black bg-white ff-sans fs-400"
+				style="display: none;">Kids</button>
+			<button aria-selected="false" class="uppercase text-black bg-white ff-sans fs-400"
+				style="display: none;">Kids</button>
+			<button aria-selected="false" class="uppercase text-black bg-white ff-sans fs-400"
+				style="display: none;">Kids</button>
+			<button aria-selected="false" class="uppercase text-black bg-white ff-sans fs-400"
+				style="display: none;">Kids</button>
+		</section>
+
+		<!-- Logo -->
+		<section class="logo">
+			<img src="../logo/logo_transparent.svg" alt="Brand logo">
+		</section>
+
+		<!-- Action -->
+		<div class="action flex" style="--gap: 22px;">
+			<div class="spacer-xl" style="visibility: hidden;"></div>
+			<div class="spacer-xl" style="visibility: hidden;"></div>
+			<div class="spacer-xl"><img src="../logo/currency.svg" alt="Currency"></div>
+			<div class="spacer-xl"><img src="../logo/empty_cart.svg" alt="Empty Cart"></div>
+		</div>
+
+		<!-- Currency switcher -->
+		<div class="currency-switcher flex">
+			<span class="uppercase fs-400 fw-bolder">$ USD</span>
+			<span class="uppercase fs-400 fw-bolder">€ EUR</span>
+			<span class="uppercase fs-400 fw-bolder">¥ JPY</span>
+		</div>
+	</header>
+
+	<main class="cart-page container flex">
+
+		<h1 class="uppercase fw-bolder fs-500">Cart</h1>
+
+
+		<div style="background: #E5E5E5; height: 1px;"></div>
+
+		<div class="cart-item flex">
+			<div class="name-price-size flex">
+				<span class="fs-500 fw-bolder">Apollo</span>
+				<span class="fs-500 fw-regular">Running Short</span>
+				<span class="fs-500 fw-bolder">$50.00</span>
+				<div class="size flex">
+					<button class="bg-white text-black fs-400">S</button>
+					<button class="bg-white text-black fs-400">M</button>
+				</div>
+			</div>
+			<div class="product-counter flex">
+				<div class="cart-item-counter flex">
+					<button aria-selected="false" class="fs-700 fw-light">+</button>
+					<span class="fs-500 fw-bolder">1</span>
+					<button aria-selected="true" class="fs-700 fw-light">-</button>
+				</div>
+
+				<div class="cart-item-image">
+					<img src="../img/ProductD.jpg" alt="Product">
+					<div class="cart-arrow flex">
+						<img src="../logo/chevron-left.svg" alt="">
+						<img src="../logo/chevron-right.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div style="background: #E5E5E5; height: 1px;"></div>
+
+		<div class="cart-item flex">
+			<div class="name-price-size flex">
+				<span class="fs-500 fw-bolder">Jupiter</span>
+				<span class="fs-500 fw-regular">Wayfarer</span>
+				<span class="fs-500 fw-bolder">$75.00</span>
+				<div class="size flex">
+					<button class="bg-white text-black fs-400">S</button>
+					<button class="bg-white text-black fs-400">M</button>
+				</div>
+			</div>
+			<div class="product-counter flex">
+				<div class="cart-item-counter flex">
+					<button aria-selected="false" class="fs-700 fw-light">+</button>
+					<span class="fs-500 fw-bolder">2</span>
+					<button aria-selected="true" class="fs-700 fw-light">-</button>
+				</div>
+
+				<div class="cart-item-image">
+					<img src="../img/ProductB.jpg" alt="Product">
+					<div class="cart-arrow flex">
+						<img src="../logo/chevron-left.svg" alt="">
+						<img src="../logo/chevron-right.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+</body>
+
+</html>

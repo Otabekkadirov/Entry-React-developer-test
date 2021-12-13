@@ -1,0 +1,96 @@
+.cart-page {
+  flex-direction: column;
+  padding-top: 5rem;
+}
+
+.cart-page > .cart-item {
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.cart-page > .cart-item > .name-price-size {
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.cart-page > .cart-item > .name-price-size > .size > * {
+  width: 63px;
+  height: 45px;
+  border: 1px solid hsl(var(--c-black));
+}
+
+.cart-page > .cart-item > .name-price-size > .size > *:hover {
+  background: hsl(var(--c-black));
+  color: hsl(var(--c-white));
+}
+
+.cart-page > .cart-item > .product-counter {
+  justify-content: space-between;
+}
+
+.cart-page > .cart-item > .product-counter > .cart-item-counter {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-page > .cart-item > .product-counter > .cart-item-counter > button {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background: hsl(var(--c-white));
+  color: hsl(var(--c-black));
+  border: 1px solid hsl(var(--c-black));
+  cursor: pointer;
+  line-height: 0;
+}
+
+.cart-page > .cart-item > .product-counter > .cart-item-counter > button:hover,
+.cart-page
+  > .cart-item
+  > .product-counter
+  > .cart-item-counter
+  > button:active {
+  background: hsl(var(--c-black));
+  color: hsl(var(--c-white));
+  border: 1px solid hsl(var(--c-black));
+}
+
+.cart-page > .cart-item > .product-counter > .cart-item-counter > span {
+  display: block;
+  text-align: center;
+}
+
+.cart-page > .cart-item > .product-counter > .cart-item-image {
+  position: relative;
+  width: 10rem;
+}
+
+.cart-page > .cart-item > .product-counter > .cart-item-image > img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.cart-page > .cart-item > .product-counter > .cart-item-image > .cart-arrow {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  justify-content: space-between;
+}
+
+.cart-page
+  > .cart-item
+  > .product-counter
+  > .cart-item-image
+  > .cart-arrow
+  > img {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
